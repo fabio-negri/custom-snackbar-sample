@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:layout_height="wrap_content"
+       tools:layout_width="match_parent"
+       tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+            android:id="@+id/chef_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/img_chef"/>
+
+    <TextView
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_chef_message"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Your order has been placed!"
+            android:textColor="#28140c"
+            app:layout_constraintBottom_toBottomOf="@id/chef_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/chef_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@id/chef_image"
+            app:layout_constraintTop_toTopOf="@id/chef_image"
+            app:layout_constraintVertical_bias="0.75"/>
+
+</merge>
